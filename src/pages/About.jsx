@@ -13,8 +13,8 @@ function About() {
     <div className="mt-[20px]">
       <Container>
         <div className="flex flex-col gap-[60px]">
-          <HeroSection />
-          <ChickenSection />
+          {/*<HeroSection />*/}
+          {/*<ChickenSection />*/}
           <OurBurger flex={"md:flex-row-reverse"} />
           <PizzaSection />
           <OurTeam />

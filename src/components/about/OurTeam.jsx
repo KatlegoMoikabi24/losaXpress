@@ -4,7 +4,7 @@ import SectionHead from "../SectionHead";
 function OurTeam() {
   return (
     <div>
-      <SectionHead title={"Our Talented Chefs"} showLink={false} />
+      <SectionHead title={"Meet Our Team"} showLink={false} />
       <div className="flex flex-col items-center justify-between gap-[20px] sm:flex-row">
         {ourTeamData.map((item) => {
           return (
@@ -20,7 +20,7 @@ function OurTeam() {
                   {item.name}
                 </h3>
                 <p className="text-lightGray">
-                  Everything We Pizza, We Pizza With Love. Designer Fastfood.
+                  {item.description}
                 </p>
               </div>
             </div>

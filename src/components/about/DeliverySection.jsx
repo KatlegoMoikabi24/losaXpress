@@ -1,22 +1,33 @@
 import { Link } from "react-router-dom";
-import photo from "../../assets/Delivery.jpg";
+import photo from "../../assets/delivered.png";
 import Button from "../Button";
 
 function DeliverySection() {
   return (
     <div
-      className="mt-[60px] flex h-[50vh] items-center justify-center bg-cover"
-      style={{ backgroundImage: `url(${photo})`, backgroundPosition: "50%" }}
+      className="relative mt-[60px] flex h-[50vh] items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${photo})`,
+      }}
     >
-      <div className="mx-auto w-[90%] text-center text-lg md:w-[60%]">
-        <p className="text-yellow">We guarantee</p>
-        <h2 className="text-4xl">30 Minutes Delivery!</h2>
-        <p className="my-[10px] text-lightGray">
-          If you’re having a meeting, working late at night and need an extra
-          push. Let us know and we will be there
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto w-[90%] text-center text-lg md:w-[60%]">
+        <p className="text-orange-200 font-bold">LOSA Express + PedalDrop</p>
+
+        <h2 className="text-4xl font-bold text-white">
+          Your Essentials Delivered To Your Door!
+        </h2>
+
+        <p className="my-[10px] text-white">
+          From bread and milk to household essentials, order from your local
+          store and let us bring it straight to your home.
         </p>
+
         <Link to={"/menu"}>
-          <Button>Make An Order</Button>
+          <Button>Shop Now</Button>
         </Link>
       </div>
     </div>

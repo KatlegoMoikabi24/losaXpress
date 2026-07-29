@@ -22,7 +22,7 @@ function PopularDishes() {
 
   return (
     <div>
-      <SectionHead title={"Popular Dishes"} to={"/menu"} />
+      <SectionHead title={"Popular items"} to={"/menu"} />
 
       <GridContainer>
         {data?.slice(0, 5)?.map((item) => {

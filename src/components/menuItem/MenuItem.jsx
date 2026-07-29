@@ -34,15 +34,10 @@ function MenuItem({ item }) {
       </div>
 
       <div className="p-[20px]">
-        <div className="flex items-center gap-[3px]">
-          {Array.from({ length: starCount }, (_, index) => (
-            <MdStarRate key={index} className="text-lg text-yellow" />
-          ))}
-        </div>
         <div className="my-[10px] flex items-start justify-between">
           <div>
             <h3 className="text-lg font-bold">{title}</h3>
-            <span className="font-bold text-yellow">
+            <span className="font-extrabold text-darkYellow">
               {formatCurrency(price)}
             </span>
           </div>

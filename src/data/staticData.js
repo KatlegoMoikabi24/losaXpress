@@ -48,21 +48,21 @@ export const headerLinks = [
 
   {
     id: 2,
-    title: "Menu",
+    title: "Shop Now",
     to: "/menu",
   },
 
   {
     id: 3,
-    title: "About US",
+    title: "About Us",
     to: "/about",
   },
 
-  {
-    id: 4,
-    title: "Blog",
-    to: "/blog",
-  },
+  // {
+  //   id: 4,
+  //   title: "Blog",
+  //   to: "/blog",
+  // },
 ];
 
 export const loginFormData = [
@@ -109,162 +109,60 @@ export const categoryDta = [
   },
 
   {
-    id: 5,
-    img: categoryImage5,
-  },
-
-  {
     id: 6,
     img: categoryImage6,
   },
 ];
 
-// export const productData = [
-//   {
-//     id: 1,
-//     title: "This Is Title",
-//     image: burger,
-//     qty: 1,
-//     category: "burger",
-//   },
-//   {
-//     id: 2,
-//     title: "This Is Title",
-//     image: burger,
-//     category: "burger",
-//     qty: 1,
-//   },
+export const productData = [
+  {
+    id: 1,
+    title: "White Bread",
+    price: 18,
+    category: "bakery",
+    qty: 1,
+  },
 
-//   {
-//     id: 3,
-//     title: "This Is Title",
-//     image: burger,
-//     category: "burger",
-//     qty: 1,
-//   },
+  {
+    id: 2,
+    title: "Full Cream Milk 1L",
+    price: 20,
+    category: "dairy",
+    qty: 1,
+  },
 
-//   {
-//     id: 4,
-//     title: "This Is Title",
-//     image: burger,
-//     category: "burger",
-//     qty: 1,
-//   },
+  {
+    id: 3,
+    title: "Eggs 18 Pack",
+    price: 45,
+    category: "fresh",
+    qty: 1,
+  },
 
-//   {
-//     id: 5,
-//     title: "This Is Title",
-//     image: pizza,
-//     category: "pizza",
-//     qty: 1,
-//   },
+  {
+    id: 4,
+    title: "Coca Cola 2L",
+    price: 25,
+    category: "drinks",
+    qty: 1,
+  },
 
-//   {
-//     id: 6,
-//     title: "This Is Title",
-//     image: pizza,
-//     category: "pizza",
-//     qty: 1,
-//   },
+  {
+    id: 5,
+    title: "Simba Chips",
+    price: 12,
+    category: "snacks",
+    qty: 1,
+  },
 
-//   {
-//     id: 7,
-//     title: "This Is Title",
-//     image: pizza,
-//     category: "pizza",
-//   },
-
-//   {
-//     id: 8,
-//     title: "This Is Title",
-//     image: pizza,
-//     category: "pizza",
-//   },
-
-//   {
-//     id: 9,
-//     title: "This Is Title",
-//     image: drink,
-//     category: "drink",
-//   },
-
-//   {
-//     id: 10,
-//     title: "This Is Title",
-//     image: drink,
-//     category: "drink",
-//   },
-
-//   {
-//     id: 11,
-//     title: "This Is Title",
-//     image: drink,
-//     category: "drink",
-//   },
-
-//   {
-//     id: 12,
-//     title: "This Is Title",
-//     image: drink,
-//     category: "drink",
-//   },
-
-//   {
-//     id: 13,
-//     title: "This Is Title",
-//     image: iceCream,
-//     category: "iceCream",
-//   },
-
-//   {
-//     id: 14,
-//     title: "This Is Title",
-//     image: iceCream,
-//     category: "iceCream",
-//   },
-
-//   {
-//     id: 15,
-//     title: "This Is Title",
-//     image: iceCream,
-//     category: "iceCream",
-//   },
-
-//   {
-//     id: 16,
-//     title: "This Is Title",
-//     image: iceCream,
-//     category: "iceCream",
-//   },
-
-//   {
-//     id: 17,
-//     title: "This Is Title",
-//     image: fish,
-//     category: "fish",
-//   },
-
-//   {
-//     id: 18,
-//     title: "This Is Title",
-//     image: fish,
-//     category: "fish",
-//   },
-
-//   {
-//     id: 19,
-//     title: "This Is Title",
-//     image: fish,
-//     category: "fish",
-//   },
-
-//   {
-//     id: 20,
-//     title: "This Is Title",
-//     image: fish,
-//     category: "fish",
-//   },
-// ];
+  {
+    id: 6,
+    title: "Toilet Paper 4 Pack",
+    price: 35,
+    category: "household",
+    qty: 1,
+  },
+];
 
 export const categoryData = [
   {
@@ -277,49 +175,95 @@ export const categoryData = [
 
   {
     id: 2,
-    title: "Burger",
-    category: "burger",
-    qty: 1,
-    icon: FaHamburger,
-  },
-
-  {
-    id: 3,
-    title: "Pizza",
-    category: "pizza",
+    title: "Bakery",
+    category: "bakery",
     qty: 1,
     icon: CiPizza,
   },
 
   {
+    id: 3,
+    title: "Dairy",
+    category: "dairy",
+    qty: 1,
+    icon: CiCoffeeCup,
+  },
+
+  {
     id: 4,
-    title: "Fish",
-    category: "fish",
+    title: "Fresh Produce",
+    category: "fresh",
     qty: 1,
     icon: FaFish,
   },
 
   {
     id: 5,
-    title: "Ice Cream",
-    category: "iceCream",
+    title: "Drinks",
+    category: "drinks",
+    qty: 1,
+    icon: CiCoffeeCup,
+  },
+
+  {
+    id: 6,
+    title: "Snacks",
+    category: "snacks",
     qty: 1,
     icon: CiIceCream,
   },
 
   {
-    id: 6,
-    title: "Drinks",
-    category: "drink",
+    id: 7,
+    title: "Household",
+    category: "household",
     qty: 1,
-    icon: CiCoffeeCup,
+    icon: CiGrid41,
+  },
+
+  {
+    id: 8,
+    title: "Pantry",
+    category: "pantry",
+    qty: 1,
+    icon: CiGrid41,
+  },
+
+  {
+    id: 9,
+    title: "Convenience",
+    category: "convenience",
+    qty: 1,
+    icon: CiGrid41,
   },
 ];
-
 export const ourTeamData = [
-  { id: 1, image: teamImage1, name: "William Smith", title: "Manager" },
-  { id: 2, image: teamImage2, name: "John Doe", title: "Chef" },
-  { id: 3, image: teamImage3, name: "Bradd  L.", title: "Chef" },
+  {
+    id: 1,
+    image: teamImage1,
+    name: "Masego",
+    title: "Founder",
+    description:
+      "Building LOSA Express to make everyday essentials easier to access through local online shopping.",
+  },
+
+  {
+    id: 2,
+    image: teamImage2,
+    name: "Lerato",
+    title: "Packaging",
+    description:
+      "Helping customers find the products they need and creating a smooth shopping experience.",
+  },
+
+  {
+    id: 3,
+    image: teamImage3,
+    name: "Bonolo",
+    title: "Sales & Operations ",
+    description:
+      "Supporting daily operations and ensuring customers receive reliable local service.",
+  },
 ];
 
 export const blogData = [
@@ -384,35 +328,35 @@ export const blogData = [
 ];
 
 export const ClientsData = [
-  {
-    id: 1,
-    description:
-      "“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”",
-    name: "Stephen Tindle",
-    image: clientImage1,
-  },
-
-  {
-    id: 2,
-    description:
-      "“I would be lost without restaurant. I would like to personally thank you for your outstanding product.”",
-    name: "John Doe",
-    image: clientImage2,
-  },
-
-  {
-    id: 3,
-    description:
-      "“I am completely blown away. I would also like to say thank you to all your staff. It's really wonderful.”",
-    name: "Clara",
-    image: clientImage3,
-  },
-
-  {
-    id: 4,
-    description:
-      "“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”",
-    name: "Nina Margaret",
-    image: clientImage4,
-  },
+  // {
+  //   id: 1,
+  //   description:
+  //     "“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”",
+  //   name: "Stephen Tindle",
+  //   image: clientImage1,
+  // },
+  //
+  // {
+  //   id: 2,
+  //   description:
+  //     "“I would be lost without restaurant. I would like to personally thank you for your outstanding product.”",
+  //   name: "John Doe",
+  //   image: clientImage2,
+  // },
+  //
+  // {
+  //   id: 3,
+  //   description:
+  //     "“I am completely blown away. I would also like to say thank you to all your staff. It's really wonderful.”",
+  //   name: "Clara",
+  //   image: clientImage3,
+  // },
+  //
+  // {
+  //   id: 4,
+  //   description:
+  //     "“Forget the trendy pizza shops, This hidden spot makes the best New York-style pizza slice in naples”",
+  //   name: "Nina Margaret",
+  //   image: clientImage4,
+  // },
 ];

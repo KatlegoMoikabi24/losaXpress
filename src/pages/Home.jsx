@@ -11,14 +11,14 @@ import {
 function Home() {
   return (
     <>
-      <HomeSlider />
+      {/*<HomeSlider />*/}
       <Container>
         <div className="mt-[60px] flex flex-col gap-[60px]">
           <Category />
           <OurBurger />
           <PopularDishes />
           <ChooseWhatYouWant />
-          <ClientRatings />
+          {/*<ClientRatings />*/}
         </div>
       </Container>
     </>

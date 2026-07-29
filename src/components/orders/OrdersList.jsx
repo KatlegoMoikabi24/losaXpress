@@ -67,7 +67,9 @@ function OrdersList() {
     navigate("/");
   };
 
-  if (!user) return <NoUser />;
+  if (!user) {
+    return <NoUser />;
+  }
 
   if (!cart.length) return <Empty message="The is No Orders." />;
 

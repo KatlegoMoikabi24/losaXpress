@@ -6,7 +6,7 @@ import { Home, Menu, About, Blog, NotFound, Orders } from "./pages";
 function App() {
   return (
     <AnimatePresence>
-      <div className="flex flex-col bg-gray text-textColor">
+      <div className="flex flex-col  text-textColor">
         <ScrollToTop />
         <Header />
         <main className="mt-[60px]">

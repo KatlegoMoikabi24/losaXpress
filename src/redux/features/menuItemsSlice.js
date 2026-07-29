@@ -11,8 +11,11 @@ const initialState = {
 export const getAllMenuItems = createAsyncThunk("menuItems/fetch", async () => {
   try {
     const querySnapshot = await getDocs(collection(firestore, "menu items"));
-    const items = querySnapshot.docs.map((doc) => doc.data());
-    return items;
+
+    return querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
   } catch (error) {
     throw Error("Error fetching menu items: " + error.message);
   }

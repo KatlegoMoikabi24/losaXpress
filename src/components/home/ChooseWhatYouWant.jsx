@@ -6,8 +6,8 @@ function ChooseWhatYouWant() {
     <SectionFlexContainer
       flex={"md:flex-row-reverse"}
       images={photo}
-      title={"Choose what you want, select a pick up time"}
-      description={"Delivery"}
+      title={"Choose what you need, we deliver to your door"}
+      description={"LOSA Express - New Protea Glen"}
     />
   );
 }

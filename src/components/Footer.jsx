@@ -1,83 +1,107 @@
 import { Link } from "react-router-dom";
-import { ImGithub, ImLinkedin2 } from "react-icons/im";
+import { FaWhatsapp, FaBicycle, FaInstagram } from "react-icons/fa";
 
 import Container from "./Container";
 import GridContainer from "./GridContainer";
 
 function Footer() {
   return (
-    <div className="mt-[50px] bg-textColor text-center text-white">
+    <footer className="mt-[50px] bg-textColor text-center text-white">
       <Container>
         <div className="py-[40px] text-sm">
           <GridContainer>
-            <div>
-              <h5 className="mb-[5px] text-xl uppercase">Address</h5>
-              <p className="text-lightGray">Cairo, Egypt</p>
-            </div>
 
             <div>
-              <h5 className="mb-[5px] text-xl uppercase">Book A Table</h5>
+              <h5 className="mb-[5px] text-xl uppercase">LOSA Express</h5>
               <p className="text-lightGray">
-                Dogfood och Sliders foodtruck.
-                <br /> Under Om oss kan ni läsa
+                Local Online Shopping & Delivery
               </p>
-              <span className="text-yellow">(+20) 1151747091</span>
+              <p className="text-lightGray">
+                Star Village, New Protea Glen
+              </p>
+              <p className="text-lightGray">
+                Soweto
+              </p>
             </div>
 
             <div>
-              <h5 className="mb-[5px] text-xl uppercase">Opening Hour</h5>
-              <p className="text-lightGray">Monday – Friday: 8am – 4pm</p>
-              <p className="text-lightGray">Saturday: 9am – 5pm</p>
+              <h5 className="mb-[5px] text-xl uppercase">
+                Delivery Available
+              </h5>
+              <p className="text-lightGray">
+                 Bicycle delivery
+              </p>
+              <p className="text-lightGray">
+                 Vehicle delivery for larger orders
+              </p>
+              <p className="text-lightGray">
+                Bread • Milk • Eggs • Drinks
+              </p>
             </div>
 
             <div>
-              <h5 className="mb-[5px] text-xl uppercase">News Letter</h5>
-              <p className="text-lightGray ">
-                Subscribe to the weekly newsletter for all the latest updates
+              <h5 className="mb-[5px] text-xl uppercase">
+                Business Hours
+              </h5>
+              <p className="text-lightGray">
+                Monday – Friday: 7am – 6pm
               </p>
-              <div className="border-lightGray mt-[10px] flex items-center border">
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  className="w-full bg-transparent p-[10px] outline-none"
-                />
-                <button className="hover:bg-darkYellow bg-yellow p-[10px] text-textColor">
-                  Subscribe
-                </button>
-              </div>
+              <p className="text-lightGray">
+                Saturday: 8am – 5pm
+              </p>
+              <p className="text-lightGray">
+                Sunday: 9am – 2pm
+              </p>
             </div>
 
-            <div className="flex flex-row items-center justify-center gap-[10px] text-xl md:flex-col md:justify-start">
-              <Link
-                to={"https://github.com/mustafa-khaled"}
+            <div>
+              <h5 className="mb-[5px] text-xl uppercase">
+                Order Now
+              </h5>
+              <p className="text-lightGray">
+                WhatsApp your order
+              </p>
+
+              <a
+                href="https://wa.me/27664301975"
                 target="_blank"
-                className="hover:text-yellow"
+                rel="noreferrer"
+                className="mt-[10px] flex items-center justify-center gap-2 text-green-400 hover:text-yellow"
               >
-                <ImGithub />
-              </Link>
-              <Link
-                to={"https://www.linkedin.com/in/the-mustafa-khaled/"}
-                target="_blank"
-                className="hover:text-yellow"
-              >
-                <ImLinkedin2 />
-              </Link>
+                <FaWhatsapp />
+                WhatsApp LOSA Express
+              </a>
             </div>
+
+            <div className="flex flex-row items-center justify-center gap-[15px] text-xl md:flex-col md:justify-start">
+              <Link
+                to="/"
+                className="hover:text-yellow"
+              >
+                <FaBicycle />
+              </Link>
+
+              <a
+                href="#"
+                className="hover:text-yellow"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+
           </GridContainer>
         </div>
       </Container>
-      <p className="bg-yellow p-[20px] text-textColor ">
-        Copyright © 2023{" "}
-        <Link
-          to={"https://www.linkedin.com/in/the-mustafa-khaled/"}
-          target="_blank"
-          className="underline"
-        >
-          Mustafa Khaled
-        </Link>
+
+      <p className="bg-orange-500 p-[20px] text-textColor">
+        Copyright © {new Date().getFullYear()}{" "}
+        <span className="font-semibold">
+          LOSApps Technologies
+        </span>
         . All Rights Reserved.
       </p>
-    </div>
+
+    </footer>
   );
 }
 
