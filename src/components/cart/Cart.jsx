@@ -378,6 +378,7 @@ hover:text-red-500
                 className="cursor-pointer text-xl"
                 onClick={() => setCheckoutOpen(false)}
               />
+
             </div>
 
             <input
