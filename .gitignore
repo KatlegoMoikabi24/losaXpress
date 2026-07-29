@@ -22,4 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-echo "scripts/serviceAccountKey.json" >> .gitignore
+# Firebase secrets
+scripts/serviceAccountKey.json
