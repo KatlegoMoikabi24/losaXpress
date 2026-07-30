@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { Header, AuthForm, Footer, ScrollToTop } from "./components";
 import { Home, Menu, About, Blog, NotFound, Orders } from "./pages";
 import OrdersStatusPage from "./pages/OrdersStatusPage.jsx";
+import AdminOrders from "./pages/AdminOrders.jsx";
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/track-order/:orderId" element={<OrdersStatusPage />} />
+            <Route
+              path="/track-order/:orderId"
+              element={<OrdersStatusPage />}
+            />
+
+            <Route path="/admin/orders" element={<AdminOrders />} />
           </Routes>
         </main>
         <Footer />
